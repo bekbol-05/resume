@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -27,7 +29,7 @@
 
 
 body {
-    background: url('../img/asta.jpg') center/cover no-repeat;
+    background: url('../img/asta.jpg')center/cover no-repeat;
 }
 
 .background {
@@ -40,43 +42,43 @@ body {
 
 @keyframes example {
     0% {
-        background-color: rgba(0, 0, 255, 0.500);
+        background-color: rgba(0, 0, 255, 0.450);
     }
 
     10% {
-        background-color: rgba(0, 128, 0, 0.500);
+        background-color: rgba(0, 128, 0, 0.450);
     }
 
     20% {
-        background-color: rgba(210, 105, 30, 0.500);
+        background-color: rgba(210, 105, 30, 0.450);
     }
 
     30% {
-        background-color: rgba(255, 105, 180, 0.500);
+        background-color: rgba(255, 0, 0, 0.450);
     }
 
     40% {
-        background-color: rgba(184, 135, 11, 0.500);
+        background-color: rgba(184, 135, 11, 0.450);
     }
 
     50% {
-        background-color: rgba(220, 20, 60, 0.500);
+        background-color: rgba(220, 20, 60, 0.450);
     }
 
     60% {
-        background-color: rgba(245, 222, 179, 0.500);
+        background-color: rgba(245, 222, 179, 0.450);
     }
 
     70% {
-        background-color: rgba(0, 0, 139, 0.500);
+        background-color: rgba(0, 0, 139, 0.450);
     }
 
     80% {
-        background-color: rgba(0, 0, 0, 0.500);
+        background-color: rgba(0, 0, 0, 0.450);
     }
 
     95% {
-        background-color: rgba(137, 43, 226, 0.500);
+        background-color: rgba(137, 43, 226, 0.450);
     }
 }
 
@@ -85,22 +87,23 @@ body {
 .resume {
     display: flex;
     justify-content: space-between;
+    padding: 4% 0;
 }
 
 .avatar {
     text-align: center;
-    flex: 0 1 25%;
+    flex: 0 1 24%;
 }
 
 .developer {
-    flex: 0 1 75%;
+    flex: 0 1 74%;
 }
 
 .avatar img {
     width: 80%;
     object-fit: cover;
     object-position: center;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 .container {
@@ -117,20 +120,58 @@ body {
     text-align: center;
 }
 
-.additional,
+.developer {
+    font-size: 18px;
+}
+
 .home_text {
     text-align: center;
-    width: 100%;
-    margin-bottom: 6%;
 }
 
 .home_text h2 {
-    color: rgb(244, 166, 20);
     text-shadow: 1px 1px 18px rgb(255, 255, 0);
+    animation-name: home;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes home {
+    0% {
+        color: rgba(255, 255, 255, 0.700);
+    }
+
+    20% {
+        color: rgba(0, 0, 0, 0.700);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 0.700);
+    }
+
+    60% {
+        color: rgba(0, 0, 0, 0.700);
+    }
+
+    80% {
+        color: rgba(255, 255, 255, 0.700);
+    }
+
+    100% {
+        color: rgb(0, 0, 0.700);
+    }
+}
+
+.additional h2 {
+    text-align: center;
+    padding: 20px 0;
+    color: darkblue;
+    font-size: 28px;
 }
 
 .additional p {
     font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 .skills {
@@ -138,7 +179,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     border-style: dashed;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 .js_text {
@@ -148,28 +189,25 @@ body {
 }
 
 .js_text h3 {
-    padding-bottom: 20px;
-
+    font-size: 25px;
+    font-family: 'Montserrat';
+    color: gold;
 }
 
 .youself {
-    flex: 0 1 75%;
-    text-align: center;
-    background-color: rgba(0, 255, 255, 0.288);
-    border-end-end-radius: 50%;
-    border-right: 15px;
-    border-right-style: dotted;
-    border-left: 15px;
-    border-left-style: double;
-    border-top-left-radius: 40%;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
+    flex: 0 1 74%;
+    border-end-end-radius: 20%;
+    border-top-left-radius: 20%;
+    box-shadow: 2px 0px 30px 2px red;
 }
 
 .add {
+    display: flex;
+    align-items: center;
     width: 95%;
-    height: 4vh;
-    border: 2px solid rgb(0, 199, 17);
+    height: 2px;
+    border-style: outset;
+    margin: 0 0 0 10px;
 }
 
 .skill_html,
@@ -179,6 +217,9 @@ body {
     height: 3.5vh;
     background-color: rgb(0, 68, 255);
     border-radius: 20px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .skill_js {
@@ -191,14 +232,28 @@ body {
 }
 
 .skill_react {
-    width: 60%;
+    width: 65%;
 }
 
 .skill {
-    padding: 0 0 10px 0;
+    padding: 10px 0;
+}
+
+.skill h2 {
+    padding: 15px 0;
+    color: rgba(255, 255, 255, 0.812);
+    font-family: 'Montserrat';
 }
 
 .projects {
+    padding: 20px 0 30px 0;
+}
+
+.projects h2 {
     margin-top: 5%;
+    padding-bottom: 20px;
     text-align: center;
+    animation-name: home;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
