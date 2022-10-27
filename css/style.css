@@ -33,9 +33,9 @@ body {
 }
 
 .background {
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(0, 0, 0, 0.500);
     animation-name: example;
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
 }
 
@@ -91,8 +91,8 @@ body {
 }
 
 .avatar {
-    text-align: center;
     flex: 0 1 24%;
+    margin-left: 30px;
 }
 
 .developer {
@@ -205,7 +205,7 @@ body {
     display: flex;
     align-items: center;
     width: 95%;
-    height: 2px;
+    height: 4.4vh;
     border-style: outset;
     margin: 0 0 0 10px;
 }
@@ -246,6 +246,11 @@ body {
 }
 
 .projects {
+    margin: 1% 0 0 0;
+    border-style: solid;
+    animation-name: home;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
     padding: 20px 0 30px 0;
 }
 
